@@ -1,0 +1,155 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-image: url(./image/header.jpg);
+    height: 1024px;
+}
+.header_tex{
+
+    padding-top: 217px;
+    padding-left: 120px;
+}
+.hello{
+    
+    width: 788.78px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #FFFFFF;
+
+}
+
+.description{
+    padding-bottom: 44px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.go_to{
+    width: 234.06px;
+    height: 48.6px;
+    left: 120px;
+    top: 482.11px;
+    background: #9C0332;
+    border-radius: 30px;
+    transition: 1s;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.go_to:hover {
+    transform:scale(1.1);
+    background:	#FC0FC0;
+}
+
+.games{
+    padding-top: 128px;
+    height: 556px;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    background: #000915;
+}
+.game1{
+    border-radius: 18px;
+    background-image: url(./image/game1.jpg);
+    background-repeat: no-repeat;
+    width: 378px;
+    height: 300px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    transition: 1s;
+}
+.game1:hover {
+    transform:scale(1.1);
+}
+.game2{
+    border-radius: 18px;
+    background-image: url(./image/game2.jpg);
+    background-repeat: no-repeat;
+    width: 378px;
+    height: 300px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    transition: 1s;
+}
+.game2:hover {
+    transform:scale(1.1);
+}
+.game3{
+    border-radius: 18px;
+    background-image: url(./image/game3.jpg);
+    background-repeat: no-repeat;
+    width: 378px;
+    height: 300px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    transition: 1s;
+}
+.game3:hover {
+    transform:scale(1.1);
+}
+
+.game_text{
+    padding-top: 236px;
+    padding-left: 32px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+@media (max-width: 375px){
+
+
+    .hello{
+        height: 77.44px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .description{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}
