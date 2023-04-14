@@ -70,15 +70,11 @@ if (month === 1) {
 }
 
 let funtic = prompt("Пожалуйста, введите любое число");
-if (funtic === Number) {
-    console.log(funtic);
+
+if (isNaN(funtic)) {
+    console.log('не число');
 } else {
-    console.log(isNaN);
-}
-if (funtic % 2 == 0) {
-    alert("Число четное");
-} else {
-    alert("Число нечетное");
+    console.log('число');
 }
 
 let clientOS = 0;
