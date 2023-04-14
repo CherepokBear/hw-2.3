@@ -73,7 +73,7 @@ let funtic = prompt("Пожалуйста, введите любое число"
 if (funtic === Number) {
     console.log(funtic);
 } else {
-    console.log(NaN);
+    console.log(isNaN);
 }
 if (funtic % 2 == 0) {
     alert("Число четное");
