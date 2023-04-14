@@ -39,33 +39,33 @@ let oct = "10";
 let nov = "11";
 let dec = "12";
 
-let month = prompt("Ведите номер");
+let month = prompt("Ведите номер месяца");
 
-if (month === "jan") {
+if (month === "1") {
     console.log("Январь")
-} else if (month === "feb") {
+} else if (month === "2") {
     console.log("Февраль")
-} else if (month === "mar") {
+} else if (month === "3") {
     console.log("Март")
-} else if (month === "apr") {
+} else if (month === "4") {
     console.log("Апрель")
-} else if (month === "may") {
+} else if (month === "5") {
     console.log("Май")
-} else if (month === "jun") {
+} else if (month === "6") {
     console.log("Июнь")
-} else if (month === "jul") {
+} else if (month === "7") {
     console.log("Июль")
-} else if (month === "aug") {
+} else if (month === "8") {
     console.log("Август")
-} else if (month === "sep") {
+} else if (month === "9") {
     console.log("Сентябрь")
-} else if (month === "oct") {
+} else if (month === "10") {
     console.log("Октябрь")
-} else if (month === "nov") {
+} else if (month === "11") {
     console.log("Ноябрь")
-} else if{
+} else if (month === "12") {
     console.log("Декабрь")
-}else {
+} else {
     console.log("No release")
 }
 
