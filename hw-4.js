@@ -26,8 +26,8 @@ console.log("Коля - зарплата " + obj.Коля + " долларов."
 let n = 1000;
 let num = 0;
 
-while ($n >= 50) {
-    n = n / 2;
+while (n >= 50) {
+    n = n /= 2;
     num++;
 }
 console.log(num);
@@ -37,7 +37,6 @@ let nbr = (frd + 7);
 
 while (nbr <= 31) {
     console.log("Сегодня пятница, " + frd + "- е число. Необходимо подготовить отчет.");
-    frd = nbr;
-    nbr++;
+    frd += 7;
 }
 
