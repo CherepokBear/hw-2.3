@@ -33,9 +33,7 @@ while (n >= 50) {
 console.log(num);
 
 let frd = 5;
-let nbr = (frd + 7);
-
-while (nbr <= 31) {
+while (frd <= 31) {
     console.log("Сегодня пятница, " + frd + "- е число. Необходимо подготовить отчет.");
     frd += 7;
 }
