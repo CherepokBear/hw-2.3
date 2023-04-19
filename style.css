@@ -9,9 +9,7 @@
     height: 1024px;
 }
 .header_tex{
-
     padding-top: 217px;
-    padding-left: 120px;
 }
 .hello{
     
@@ -129,7 +127,7 @@
 }
 
 .seasons{
-    background-image: url(./image/header.jpg);
+    background: #000915;
     height: 1024px;
 }
 
@@ -146,15 +144,13 @@
 }
 
 .block{
+    padding-top: 235px;
     display: flex;
-    justify-content: center
 }
 
 .play{
     width: 234.06px;
     height: 48.6px;
-    left: 120px;
-    top: 482.11px;
     background: #9C0332;
     border-radius: 30px;
     transition: 1s;
