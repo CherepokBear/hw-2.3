@@ -46,3 +46,51 @@ function many() {
 
 //5______________________________________________________
 
+function isItAnumber (a, b){
+    if (a && b !== isNaN) {
+        return 'Одно или оба значения не являются числом'
+    } else {
+        return a * b
+    }
+    // a && b !== isNaN ? return 'Одно или оба значения не являются числом' : return a * b
+}
+
+// 6______________________________________________________
+
+function correct () {
+    var a = prompt (" введите число");
+    if (a == isNaN) {
+        Math.pow(a, 2);
+        return 'n в кубе равняется ${a}'
+    } else {
+        return 'Переданный параметр не является числом'
+    }
+}
+
+//7_______________________________________________________
+
+function getRectangleArea() {
+    return this.p * this.radius;
+  }
+  function getRectanglePerimeter() {
+    return this.radius * this.p * 2;
+  }
+  
+  const circle1 = {
+    radius: 43,
+    p: 3.14,
+    getArea: getRectangleArea,
+    getPerimeter: getRectanglePerimeter,
+  };
+  
+  const circle2 = {
+    radius: 25,
+    p: 3.14,
+    getArea: getRectangleArea,
+    getPerimeter: getRectanglePerimeter,
+  };
+  
+  console.log(circle1.getArea());
+  console.log(circle1.getPerimeter());
+  console.log(circle2.getArea());
+  console.log(circle2.getPerimeter());
