@@ -95,7 +95,7 @@
 //   console.log(circle2.getArea());
 //   console.log(circle2.getPerimeter());
 
-function sesons () {
+function sesons() {
     let month = Number (prompt ('Введите номер месяца'));
   
     if (month > 0 && month <= 3) {
