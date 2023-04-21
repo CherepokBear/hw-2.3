@@ -35,7 +35,7 @@
 // function many() {
 //     let num = prompt('Сколько вам лет?');
 //     let i = 0;
-//     if ((num <= 0)) {
+//     if (num <= 0) {
 //         alert("Вы ввели неправильное значение");
 //     } else if (num < 12) {
 //         alert("Привет, друг!");
@@ -47,7 +47,7 @@
 // 5______________________________________________________
 
 // function isItAnumber (a, b){
-//     if (a && b !== isNaN) {
+//     if (isNaN(a) || isNaN(b)) {
 //         return 'Одно или оба значения не являются числом'
 //     } else {
 //         return a * b
@@ -59,7 +59,7 @@
 
 // function correct () {
 //     var a = prompt ("введите число");
-//     if (a == isNaN) {
+//     if (isNaN(a)) {
 //         Math.pow(a, 2);
 //         return 'n в кубе равняется ${a}'
 //     } else {
@@ -75,36 +75,36 @@
 //   function getRectanglePerimeter() {
 //     return this.radius * this.p * 2;
 //   }
-  
+
 //   const circle1 = {
 //     radius: 43,
 //     p: 3.14,
 //     getArea: getRectangleArea,
 //     getPerimeter: getRectanglePerimeter,
 //   };
-  
+
 //   const circle2 = {
 //     radius: 25,
 //     p: 3.14,
 //     getArea: getRectangleArea,
 //     getPerimeter: getRectanglePerimeter,
 //   };
-  
+
 //   console.log(circle1.getArea());
 //   console.log(circle1.getPerimeter());
 //   console.log(circle2.getArea());
 //   console.log(circle2.getPerimeter());
 
 function sesons() {
-    let month = Number (prompt ('Введите номер месяца'));
-  
-    if (month > 0 && month <= 3) {
+    let month = Number(prompt('Введите номер месяца'));
+
+    if (month > 0 && month <= 3 || month === 11) {
         return "Зима"
-    } else if (month > 3 && month <= 6){
+    } else if (month > 3 && month <= 6) {
         return "Лето"
-    } else if (month > 6 && month <= 9){
+    } else if (month > 6 && month <= 9) {
         return "Весна"
-    } else if (month > 9 && month <= 12){
+    } else if (month > 9 && month <= 11) {
         return "Осень"
     } else {
         return "Вы ввели не число!"
