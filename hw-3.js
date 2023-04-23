@@ -26,59 +26,55 @@ let b = "3";
 let num = Number(a + b);
 alert(num);
 
-let jan = "1";
-let feb = "2";
-let mar = "3";
-let apr = "4";
-let may = "5";
-let jun = "6";
-let jul = "7";
-let aug = "8";
-let sep = "9";
-let oct = "10";
-let nov = "11";
-let dec = "12";
+let jan = 1;
+let feb = 2;
+let mar = 3;
+let apr = 4;
+let may = 5;
+let jun = 6;
+let jul = 7;
+let aug = 8;
+let sep = 9;
+let oct = 10;
+let nov = 11;
+let dec = 12;
 
 let month = prompt("Ведите номер месяца");
 
-if (month === "1") {
+if (month === 1) {
     console.log("Январь")
-} else if (month === "2") {
+} else if (month === 2) {
     console.log("Февраль")
-} else if (month === "3") {
+} else if (month === 3) {
     console.log("Март")
-} else if (month === "4") {
+} else if (month === 4) {
     console.log("Апрель")
-} else if (month === "5") {
+} else if (month === 5) {
     console.log("Май")
-} else if (month === "6") {
+} else if (month === 6) {
     console.log("Июнь")
-} else if (month === "7") {
+} else if (month === 7) {
     console.log("Июль")
-} else if (month === "8") {
+} else if (month === 8) {
     console.log("Август")
-} else if (month === "9") {
+} else if (month === 9) {
     console.log("Сентябрь")
-} else if (month === "10") {
+} else if (month === 10) {
     console.log("Октябрь")
-} else if (month === "11") {
+} else if (month === 11) {
     console.log("Ноябрь")
-} else if (month === "12") {
+} else if (month === 12) {
     console.log("Декабрь")
 } else {
     console.log("No release")
 }
 
 let funtic = prompt("Пожалуйста, введите любое число");
-if (funtic === Number) {
-    console.log(funtic);
+
+if (isNaN(funtic)) {
+    console.log('не число');
 } else {
-    console.log(isNaN);
-}
-if (funtic % 2 == 0) {
-    alert("Число четное");
-} else {
-    alert("Число нечетное");
+    console.log('число');
 }
 
 let clientOS = 0;

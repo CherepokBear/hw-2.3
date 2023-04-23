@@ -7,11 +7,12 @@
 .header{
     background-image: url(./image/header.jpg);
     height: 1024px;
+    display: flex;
+    justify-content: center;
 }
 .header_tex{
-
     padding-top: 217px;
-    padding-left: 120px;
+
 }
 .hello{
     
@@ -125,6 +126,43 @@
     line-height: 32px;
     display: flex;
     align-items: center;
+    color: #FFFFFF;
+}
+
+.seasons{
+    background: #000915;
+    height: 1024px;
+}
+
+.seasons_tex{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+
+    width: 584px;
+    height: 235.6px;
+}
+
+.block{
+    padding-top: 235px;
+    display: flex;
+    justify-content: center;
+}
+
+.play{
+    width: 234.06px;
+    height: 48.6px;
+    background: #9C0332;
+    border-radius: 30px;
+    transition: 1s;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
     color: #FFFFFF;
 }
 

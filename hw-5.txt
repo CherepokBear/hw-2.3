@@ -1,0 +1,31 @@
+let user = {
+    name: 'Шарик',
+    age: 2,
+    city: Omsk,
+    getInfo() {
+        return 'Пользователь ${user.name} , возраст ${user.age}, проживает в городе ${user.sity}'
+    }
+}
+console.log(user.getInfo());
+
+// ----------------------------------------------
+
+function getRectanglePerimeter() {
+    return 2 * (this.width + this.height)
+}
+
+let square1 = {
+    width: 12,
+    height: 40,
+    perimetr: getRectanglePerimeter
+}
+
+let square2 = {
+    width: 35,
+    height: 23,
+    perimetr: getRectanglePerimeter
+}
+console.log(square1.getRectanglePerimeter());
+console.log(square2.getRectanglePerimeter());
+
+// ----------------------------------------------
