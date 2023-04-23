@@ -19,12 +19,7 @@ arr = arr.join(' ');
 
 //4-------------------------------------------------
 let cubes = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
-// for (let i = 0; i < cubes.length; i++) {
-//     let cube = cubes[i];
-//     for (let j = 0; j < cube.length; j++) {
-//         console.log("cube[" + i + "][" + j + "] = " + cube[j]);
-//     }
-// }
+
 for (let arrIn of cubes) {
     for (let element of arrIn)
         console.log(element)
@@ -61,32 +56,11 @@ console.log(arr.concat([1, 2, 3], [4, 5, 6]));
 const arr = [9, 8, 7, 6, 5];
 massiv.reduce((a, b) => a + b);
 console log(arr)
-// const sum = (a, b) => {
-//     let result = a + b;
-//     return result;
-// }
-// for (let arr = 0; arr < array.length; arr++) {
-//     const element = array[a + b];
-// }
-// function sumFu(...arr) {
-//     let sum = 0;
-//     for(let item of arr){
-//         sum+= item;
-//     }
-//     return sum;
-// }
-// console.log(sumFu);
 
 //11--------------------------------
 let arr = [5, 5, 5].map(item => item ** 2);
 console.log(arr);
 
-// let arr = [1, 2, 3, 4, 5];
-// for (let i of arr) {
-//   arr[i] = arr[i] ** 2;
-// }
-
-// console.log(arr);
 
 //12-------------------------------
 function multi(arr) {
