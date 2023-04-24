@@ -55,7 +55,7 @@ console.log(result);
 
 //10------------------------------------
 const arr = [9, 8, 7, 6, 5];
-massiv.reduce((a, b) => a + b);
+arr.reduce((a, b) => a + b);
 console log(arr)
 
 //11--------------------------------
