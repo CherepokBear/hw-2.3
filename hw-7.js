@@ -10,17 +10,17 @@ const products = ['Кошка', 'Кит', 'Комар', 'Носорог'];
 const search = 'ко';
 
 products.forEach((product) => {
-	if (product.toLowerCase().includes(search.toLowerCase())) {
-		console.log([product, search]);
-	}
+    if (product.toLowerCase().includes(search.toLowerCase())) {
+        console.log([product, search]);
+    }
 });
 
 //3 
 
 let ver = 32.58884;
-let veri = Math. floor(32.58884);
-let veric = Math. ceil(32.58884);
-let vericl = Math. round(32.58884);
+let veri = Math.floor(32.58884);
+let veric = Math.ceil(32.58884);
+let vericl = Math.round(32.58884);
 console.log(veri, veric, vericl)
 
 //4
@@ -42,8 +42,8 @@ function getRandomInt() {
     let input = prompt("Введите целое число");
 
     return Math.floor(Math.random().max(input));
-  }
-  console.log(getRandomInt());
+}
+console.log(getRandomInt());
 
 //7 
 
@@ -68,11 +68,30 @@ console.log();
 //10
 
 var today = new Date();
-var time = today.toLocaleTimeString('en-US');
+var time = today.toLocaleTimeString('ru-RU');
 
 var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 options.timeZone = 'UTC';
 options.timeZoneName = 'short';
- 
-var now = today.toLocaleString('en-US', options);
-console.log(time, now);
+
+var now = today.toLocaleString('ru-RU', options);
+console.log("Время:", " ", time);
+console.log("Дата:", " ", now);
+
+//11
+let mas = [' Яблоко', ' Груша', ' Дыня', ' Виноград', ' Персик', ' Апельсин', ' Мандарин'];
+alert(mas.sort(() => Math.random() - 0.5));
+
+let quest = prompt("Чему равнялся первый элемент массива?");
+let quests = prompt("Чему равнялся последний элемент массива?");
+let index = 0;
+let indexs = -1;
+
+
+if (mas.at(index)) {
+    alert("Поздравляем!")
+} else if (mas.at(indexs)) {
+    alert("Вы были близки к победе!")
+} else {
+    alert("Неверно!")
+}
