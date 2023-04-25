@@ -72,7 +72,7 @@ function multi(arr) {
         }
     }
 }
-console.log(newarr)
+console.log(multi)
 
 //13-------------------------------------
 var myArray = [4, -5, 0, 2, -67, 8, 10, -34];
@@ -82,4 +82,4 @@ function negative(array) {
         return value < 0;
     });
 }
-console.log(Negative(myArray));
+console.log(negative(myArray));
