@@ -53,3 +53,26 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 console.log(getRandomInt())
+
+//8
+
+var date = new Date();
+console.log(date)
+
+//9
+
+let currentDate = new Date();
+currentDate = setDate(73);
+console.log();
+
+//10
+
+var today = new Date();
+var time = today.toLocaleTimeString('en-US');
+
+var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+options.timeZone = 'UTC';
+options.timeZoneName = 'short';
+ 
+var now = today.toLocaleString('en-US', options);
+console.log(time, now);
