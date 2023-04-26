@@ -40,19 +40,23 @@ rand()
 
 function getRandomInt() {
     let input = prompt("Введите целое число");
+    let array = [];
+    // array.length = input / 2;
 
-    return Math.floor(Math.random().max(input));
+    for (let i = 0; i < input; i++) {
+        ar = Math.floor(Math.random() * input)
+    }
+
+    return array.concat(ar)
 }
 console.log(getRandomInt());
 
 //7 
 
 function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-console.log(getRandomInt())
+console.log(getRandomInt(2, 8))
 
 //8
 

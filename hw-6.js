@@ -4,7 +4,7 @@ const array = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < array.length; i++) {
     if (array[i] == 10) break;
     console.log(array[i]);
-    
+
 }
 
 
@@ -39,8 +39,8 @@ console.log(arr);
 //7---------------------------------------
 const arr = [9, 8, 7, 6, 5];
 let fact = prompt("Ведите число от 1 до 10");
-    const element = array[arr.includes(fact)];
-    console.log(element);
+const element = array[arr.includes(fact)];
+console.log(element);
 
 
 //8---------------------------------------
@@ -50,7 +50,7 @@ console.log(reverse);
 
 //9-------------------------------------
 const arr = [[1, 2, 3,], [4, 5, 6]];
-const result = [arr.flat()];
+const result = arr.flat();
 console.log(result);
 
 //10------------------------------------
@@ -66,11 +66,10 @@ console.log(arr);
 //12-------------------------------
 function multi(arr) {
     var newarr = ['слово', '', 'слог', 'длинное предложение', 'буква'];
-    function name() {
-        for (var i = 0; i < arr.length; i++) {
-            return newarr = arr[i].length;
-        }
+    for (var i = 0; i < arr.length; i++) {
+        return newarr = arr[i].length;
     }
+
 }
 console.log(multi)
 
