@@ -94,7 +94,7 @@ function games() {
     if (quest == mas.pop() && quests == mas.shift()) {
         alert("Поздравляем!")
     } else if (quest == mas.shift() && quests != mas.pop() || quests == mas.pop() && quest != mas.shift()) {
-        alert("Вы были близки к победе!")
+        alert("Вы были близки к победе!Поздравляем!")
     } else {
         alert("Неверно!")
     }
