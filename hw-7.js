@@ -85,14 +85,15 @@ console.log("Дата:", " ", now);
 //11
 function games() {
     let mas = [' Яблоко', ' Груша', ' Дыня', ' Виноград', ' Персик', ' Апельсин', ' Мандарин'];
-    alert(mas.sort(() => Math.random() - 0.5));
+    mas = mas.sort(() => Math.random() - 0.5);
+    alert(mas);
 
     let quest = prompt("Чему равнялся первый элемент массива?");
     let quests = prompt("Чему равнялся последний элемент массива?");
 
-    if (mas.shift(mas)) {
+    if (mas.shift() == mas.pop() && mas.shift() == mas.shift()) {
         alert("Поздравляем!")
-    } else if (mas.pop(mas)) {
+    } else if (mas.shift() == mas.shift() && mas.pop() != mas.pop() || mas.pop() == mas.pop() && mas.shift() != mas.shift()) {
         alert("Вы были близки к победе!")
     } else {
         alert("Неверно!")
