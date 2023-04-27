@@ -1,16 +1,11 @@
-function callbackWithArrayLength(arr, callback) {
-    // console.log(arr);
-    /* Писать код тут */
-    callback(-1);
+function log(arrItem) {
+    console.log("Элемент массива:", arrItem);
 }
 
-callbackWithArrayLength([1], (length) => {
-    console.log(length);
-});
+function each(arr, cb) {
+    for (let i = 0; i < arr.length; i++) {
+        cb(i);
+    }
+}
 
-callbackWithArrayLength([1, 1], (len) => {
-    console.log(len);
-});
-callbackWithArrayLength([1, 1, 1, 1, 1], (l) => {
-    console.log(l);
-});
+each(["Глеб", "Олег", "Татьяна", "Платон"], log);
