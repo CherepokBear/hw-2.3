@@ -83,19 +83,19 @@ console.log("Время:", " ", time);
 console.log("Дата:", " ", now);
 
 //11
-let mas = [' Яблоко', ' Груша', ' Дыня', ' Виноград', ' Персик', ' Апельсин', ' Мандарин'];
-alert(mas.sort(() => Math.random() - 0.5));
+function games() {
+    let mas = [' Яблоко', ' Груша', ' Дыня', ' Виноград', ' Персик', ' Апельсин', ' Мандарин'];
+    alert(mas.sort(() => Math.random() - 0.5));
 
-let quest = prompt("Чему равнялся первый элемент массива?");
-let quests = prompt("Чему равнялся последний элемент массива?");
-let index = 0;
-let indexs = -1;
+    let quest = prompt("Чему равнялся первый элемент массива?");
+    let quests = prompt("Чему равнялся последний элемент массива?");
 
-
-if (mas.at(index)) {
-    alert("Поздравляем!")
-} else if (mas.at(indexs)) {
-    alert("Вы были близки к победе!")
-} else {
-    alert("Неверно!")
+    if (mas.shift(mas)) {
+        alert("Поздравляем!")
+    } else if (mas.pop(mas)) {
+        alert("Вы были близки к победе!")
+    } else {
+        alert("Неверно!")
+    }
 }
+
