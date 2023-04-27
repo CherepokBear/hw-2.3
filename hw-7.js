@@ -91,9 +91,9 @@ function games() {
     let quest = prompt("Чему равнялся первый элемент массива?");
     let quests = prompt("Чему равнялся последний элемент массива?");
 
-    if (mas.shift() == mas.pop() && mas.shift() == mas.shift()) {
+    if (quests == mas.pop() && quest == mas.shift()) {
         alert("Поздравляем!")
-    } else if (mas.shift() == mas.shift() && mas.pop() != mas.pop() || mas.pop() == mas.pop() && mas.shift() != mas.shift()) {
+    } else if (quest == mas.shift() && mquests != mas.pop() || quests == mas.pop() && quest != mas.shift()) {
         alert("Вы были близки к победе!")
     } else {
         alert("Неверно!")
