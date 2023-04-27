@@ -69,7 +69,7 @@ let currentDate = new Date();
 currentDate = setDate(73);
 console.log();
 
-//10
+// 10
 
 var today = new Date();
 var time = today.toLocaleTimeString('ru-RU');
@@ -84,16 +84,16 @@ console.log("Дата:", " ", now);
 
 //11
 function games() {
-    let mas = [' Яблоко', ' Груша', ' Дыня', ' Виноград', ' Персик', ' Апельсин', ' Мандарин'];
+    let mas = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
     mas = mas.sort(() => Math.random() - 0.5);
     alert(mas);
 
     let quest = prompt("Чему равнялся первый элемент массива?");
     let quests = prompt("Чему равнялся последний элемент массива?");
 
-    if (quests == mas.pop() && quest == mas.shift()) {
+    if (quest == mas.pop() && quests == mas.shift()) {
         alert("Поздравляем!")
-    } else if (quest == mas.shift() && mquests != mas.pop() || quests == mas.pop() && quest != mas.shift()) {
+    } else if (quest == mas.shift() && quests != mas.pop() || quests == mas.pop() && quest != mas.shift()) {
         alert("Вы были близки к победе!")
     } else {
         alert("Неверно!")
