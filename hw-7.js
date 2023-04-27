@@ -1,19 +1,21 @@
 //1
 
-let Up = "JrKnnnGyyH";
-let Upp = tur.toUpperCase();
-console.log(Upp)
+let up = "JrKnnnGyyH";
+let upp = tur.toUpperCase();
+console.log(upp)
 
 //2
+function book() {
+    const products = ['Кошка', 'Кит', 'Комар', 'Носорог'];
+    const search = 'ко';
 
-const products = ['Кошка', 'Кит', 'Комар', 'Носорог'];
-const search = 'ко';
+    products.forEach((product) => {
+        if (product.toLowerCase().includes(search.toLowerCase())) {
+            console.log([product, search]);
+        }
+    });
+}
 
-products.forEach((product) => {
-    if (product.toLowerCase().includes(search.toLowerCase())) {
-        console.log([product, search]);
-    }
-});
 
 //3 
 
@@ -91,12 +93,11 @@ function games() {
     let quest = prompt("Чему равнялся первый элемент массива?");
     let quests = prompt("Чему равнялся последний элемент массива?");
 
-    if (quest == mas.pop() && quests == mas.shift()) {
+    if (quest == mas[0] && quests == mas[mas.length - 1]) {
         alert("Поздравляем!")
-    } else if (quest == mas.shift() && quests != mas.pop() || quests == mas.pop() && quest != mas.shift()) {
+    } else if (quest == mas[0] && quests != mas[mas.length - 1] || quests == mas[mas.length - 1] && quest != mas[0]) {
         alert("Вы были близки к победе!Поздравляем!")
     } else {
         alert("Неверно!")
     }
 }
-
