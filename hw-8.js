@@ -1,11 +1,21 @@
-function log(arrItem) {
-    console.log("Элемент массива:", arrItem);
-}
+//1
 
-function each(arr, cb) {
-    for (let i = 0; i < arr.length; i++) {
-        cb(i);
+const people = [
+    { name: 'Глеб', age: 29 },
+    { name: 'Анна', age: 17 },
+    { name: 'Олег', age: 7 },
+    { name: 'Оксана', age: 47 }
+];
+console.log(people.sort(function (a, b) {
+    if (a.age > b.age) {
+        return 1;
     }
-}
+    if (a.age < b.age) {
+        return -1;
+    }
+    return 0;
+}));
 
-each(["Глеб", "Олег", "Татьяна", "Платон"], log);
+//2
+
+
