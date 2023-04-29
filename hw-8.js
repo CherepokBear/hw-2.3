@@ -20,20 +20,27 @@
 
 function isPositive() {
     // писать код тут
-    for (var key in people) {
-        // этот код будет вызван для каждого свойства объекта
-        // ..и выведет имя свойства и его значение
+    // for (var key in people) {
+    //     // этот код будет вызван для каждого свойства объекта
+    //     // ..и выведет имя свойства и его значение
 
-        alert("Ключ: " + key + " значение: " + people[key]);
-    }
+    //     alert("Ключ: " + key + " значение: " + people[key]);
+    // }
 }
 function isMale() {
     // console.log('');
-    return
+    // return
 }
-function filter(arr) {
-    const result = arr.filter(item => item > 0);   //.sort((a, b) => a - b);
-    console.log(result);
+function filter(arr, ruleFunction) {
+    // const result = arr.filter(item => item > 0);   //.sort((a, b) => a - b);
+    // console.log(result);
+    const output = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        output.push(ruleFunction(arr[i]));
+    }
+
+    return output;
 }
 
 console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
