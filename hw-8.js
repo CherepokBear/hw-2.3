@@ -13,24 +13,15 @@ function isPositive(item) {
     return item >= 0;
 }
 function isMale() {
-    return people(gender === 'male')
+    // return people(...Object.people(obj))
+    // return people.find(e => e.gender === 'male');
+    var found = people.find(e => e.gender === 'male');
+    return found
+
 }
 
 function filter(arr, ruleFunction) {
-    // function ruleFunction() { arr.filter(item => item > 0); }
-    // const result = [];
-    // for (let i = 0; i < arr.length; i++) {
-    //     result.push(ruleFunction(arr[i]));
-    // }
-    // 
-    let result = arr.filter(function (elem) {
-        if (elem >= 0) {
-            return true;
-        } else {
-            return false;
-        }
-    });
-    return result;
+    return arr.filter(ruleFunction)
 }
 
 console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
