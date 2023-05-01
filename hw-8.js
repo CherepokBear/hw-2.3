@@ -12,8 +12,13 @@
 function isPositive(item) {
     return item >= 0;
 }
+
 function isMale() {
-    return people.find(e => e.gender === 'female');
+    people.forEach(o => {
+        if (o.gender === 'male') {
+            console.log(o);
+        }
+    });
 }
 
 function filter(arr, ruleFunction) {
