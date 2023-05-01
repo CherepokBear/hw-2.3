@@ -17,11 +17,19 @@ function isMale() {
 }
 
 function filter(arr, ruleFunction) {
-    function ruleFunction() { arr.filter(item => item > 0); }
-    const result = [];
-    for (let i = 0; i < arr.length; i++) {
-        result.push(ruleFunction(arr[i]));
-    }
+    // function ruleFunction() { arr.filter(item => item > 0); }
+    // const result = [];
+    // for (let i = 0; i < arr.length; i++) {
+    //     result.push(ruleFunction(arr[i]));
+    // }
+    // 
+    let result = arr.filter(function (elem) {
+        if (elem >= 0) {
+            return true;
+        } else {
+            return false;
+        }
+    });
     return result;
 }
 
