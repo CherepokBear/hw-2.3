@@ -13,12 +13,8 @@ function isPositive(item) {
     return item >= 0;
 }
 
-function isMale() {
-    people.forEach(o => {
-        if (o.gender === 'male') {
-            console.log(o);
-        }
-    });
+function isMale(item) {
+    return item.gender === 'male';
 }
 
 function filter(arr, ruleFunction) {
