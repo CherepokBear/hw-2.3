@@ -13,7 +13,7 @@ function isPositive(item) {
     return item >= 0;
 }
 function isMale() {
-    return people.find(e => e.gender === 'male');
+    return people.find(e => e.gender === 'female');
 }
 
 function filter(arr, ruleFunction) {
